@@ -1,0 +1,50 @@
+.navbar{
+    height:50px;
+    background-color: #3F51B6 !important;
+}
+
+.box{
+    display:flex;
+    margin:1rem;
+}
+.cardContainer{
+    padding: 0 5rem;
+    margin-top:65px;
+}
+.cardDiv{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 15px; */
+}
+.cardDiv .extraDetails{
+    display: flex;
+    align-items: center;
+    padding: 0px;
+}
+.cardDiv img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.imgDiv{
+    display: flex;
+    align-items: center;
+}
+
+.infinite-scroll-component{
+    overflow: hidden !important;
+}
+
+.cardLoader{
+    text-align: center;
+    font-size:25px;
+    padding: 15px;
+    border:1px solid #3F51B6;
+    color:#3F51B6;
+}
+
+@media only screen and (max-width: 600px) {
+    .cardContainer{
+        padding: 0;
+    }
+}
