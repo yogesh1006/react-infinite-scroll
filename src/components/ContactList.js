@@ -2,7 +2,7 @@ import React,{useState, useEffect} from 'react';
 import { useSelector,useDispatch } from 'react-redux';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { GetContactsList } from './ContactListSlice';
-import { Card, Col, Navbar, Row } from 'react-bootstrap';
+import { Card, Col, Row } from 'react-bootstrap';
 
 import './ContactList.css'
 
@@ -65,9 +65,6 @@ const ContactList = () =>{
 
     return (
         <>
-        <Navbar bg="primary" variant="dark" fixed="top" md={5}>
-           <Navbar.Brand href="#home" style={{paddingLeft:"15px"}}>Infinite Scroll</Navbar.Brand>
-        </Navbar>
         <Row className='cardContainer' style={{marginTop:"4rem"}}>{cardDetails}</Row>
         </>
     )
